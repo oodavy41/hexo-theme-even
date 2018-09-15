@@ -15,8 +15,10 @@ body {
   line-height: $global-lineheight;
   color: $global-font-color;
   background: $global-background;
+  background-blend-mode: $global-background-blend;
+  background-size: $global-background-scale;
   scroll-behavior: smooth;
-  border-top: 3px solid $theme-color;
+  border-top: 4px solid $theme-color;
 
   &.hide-top {
     border-top: 3px solid transparent;
@@ -31,7 +33,7 @@ body {
 
 ::selection {
   background: $theme-color;
-  color: #fff;
+  color: $theme-background;
 }
 
 // ::-webkit-scrollbar {
@@ -76,7 +78,7 @@ a {
 @include max-screen() {
   .container {
     width: 100%;
-    box-shadow: -1px -5px 5px $gray;
+    box-shadow: -5px -5px 5px $theme-background;
   }
 }
 

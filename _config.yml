@@ -3,7 +3,7 @@
 # ===========================================
 
 # Site creation time
-since: 2015
+since: 2016
 
 # Custom your favicon.ico in `site/source`
 favicon: /favicon.ico
@@ -18,16 +18,14 @@ rss: default
 # ===========================================
 menu:
   Home: /
-  # Archives: /archives/
-  # Tags: /tags
+  Archives: /archives/
+  Tags: /tags
   # Categories: /categories
-  # About: /about
+  About: /about
 
 # ===========================================
 # Theme Settings
 # ===========================================
-# color: default | mint green | cobalt blue | hot pink | dark violet
-color: default
 
 # default page mode: default | archives
 mode: default

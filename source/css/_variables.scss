@@ -2,43 +2,27 @@
 // Variables
 // ==============================
 
-// ========== Theme Color ========== //
-// Theme color config from `even/_config.yml`
-$theme-color-config: to-lower-case(hexo-theme-config('color'));
-
-// Default theme color map
-$theme-color-map: (
-  'default': #c05b4d #f8f5ec,
-  'mint green': #16982B #f5f5f5,
-  'cobalt blue': #0047AB #f0f2f5,
-  'hot pink': #FF69B4 #f8f5f5,
-  'dark violet': #9932CC #f5f4fa
-);
-
-// Check theme color config.
-// if it does not exist, use default theme color.
-@if not(map-has-key($theme-color-map, $theme-color-config)) {
-  $theme-color-config: 'default';
-}
-$theme-color-list: map-get($theme-color-map, $theme-color-config);
-
 // Default theme color of the site.
-$theme-color: nth($theme-color-list, 1) !default;
+$theme-background: #1b3c59 !default;
+$theme-color: #a6ed8e !default;
+$theme-font:#f2f2f0 !default;
 
 // Deputy theme color of the site.
-$deputy-color: nth($theme-color-list, 2) !default;
+$deputy-color: #456173 !default;
 
 // ========== Color ========== //
 $black: #0a0a0a !default;
-$white: #fefefe !default;
-$light-gray: #e6e6e6 !default;
+$bgColor: #00000000 !default;
+$lineColor: $theme-color !default;
+$fontColor: $theme-font !default;
 $gray: #cacaca !default;
-$dark-gray: #8a8a8a !default;
+$secColor: #456173 !default;
 
-
+// ========== bgImg =========== //
+$img: '../imgs/bg.jpg' !default;
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+$global-font-color: $fontColor !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -58,8 +42,14 @@ $global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !def
 // Serif font family of the site.
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
 
-// Background color of the site.
-$global-background: $white !default;
+// Background img of the site.
+$global-background: url($img) !default;
+
+// Background img scale.
+$global-background-scale: 30% !default;
+
+// Background blend color.
+$global-background-blend: 0 !default;
 
 // Headings font size of the site.
 $global-headings: (
@@ -93,7 +83,7 @@ $header-padding: 20px 20px !default;
 $logo-font-size: 48px !default;
 
 // Font family of the logo.
-$logo-font-family: 'Chancery', cursive, LiSu, sans-serif !default;
+$logo-font-family: Yu Gothic, sans-serif , cursive, LiSu !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
@@ -115,7 +105,7 @@ $post-list-margin-bottom: 20px !default;
 $post-padding: 1.5em 0 !default;
 
 // Border top of the post + post.
-$post-border: 1px solid $light-gray !default;
+$post-border: 1px solid $lineColor !default;
 
 // Font size of post title.
 $post-title-font-size: 27px !default;
@@ -127,7 +117,7 @@ $post-title-font-weight: 400 !default;
 $post-meta-margin-top: 5px !default;
 
 // Font color of the post meta.
-$post-meta-font-color: $dark-gray !default;
+$post-meta-font-color: $secColor !default;
 
 // Border bottom of the read more link when hover it.
 $post-readMore-border-bottom: 1px solid $theme-color !default;
@@ -136,7 +126,7 @@ $post-readMore-border-bottom: 1px solid $theme-color !default;
 $post-footer-margin-top: 20px !default;
 
 // Border top of post footer.
-$post-footer-border-top: 1px solid $light-gray !default;
+$post-footer-border-top: 1px solid $lineColor !default;
 
 // Padding of the post tags.
 $post-tags-padding: 15px 0 !default;
@@ -150,7 +140,7 @@ $post-nav-font-size: 18px !default;
 $post-toc-width: 200px !default;
 
 // Backgroud color of the post toc.
-$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
+$post-toc-backgroud: rgba($deputy-color, 0.1) !default;
 
 // Margin left of the post toc.
 $post-toc-margin-left: $global-body-width - 15px !default;
@@ -185,7 +175,7 @@ $content-table-border-color: darken($deputy-color, 3%) !default;
 
 // ========== Code ========== //
 // Color of the code.
-$code-color: #c7254e !default;
+$code-color: #59c23f !default;
 
 // Font size of code.
 $code-font-size: 13px !default;
@@ -230,7 +220,7 @@ $code-type-list: (
 ) !default;
 
 // Color of the code background.
-$code-background: $deputy-color !default;
+$code-background: rgba($deputy-color,0.2) !default;
 
 
 // ========== Pagination ========== //
@@ -278,7 +268,7 @@ $archive-post-mobile-padding: 5px 10px !default;
 $archive-post-mobile-time-font-size: 13px !default;
 
 // Border left of the archive post, use $archive-post-hover-border-left when hover it.
-$archive-post-border-left: 1px solid $gray !default;
+$archive-post-border-left: 1px solid $deputy-color !default;
 $archive-post-hover-border-left: 3px solid $theme-color !default;
 
 // Transition of the archive post when hover it.

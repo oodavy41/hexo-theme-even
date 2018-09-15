@@ -5,7 +5,7 @@
     this.config = config;
   }
 
-  Even.prototype.setup = function() {
+  Even.prototype.setup = function () {
     var leancloud = this.config.leancloud;
 
     this.navbar();
@@ -42,6 +42,7 @@
     });
 
     slideout.on('beforeopen', function () {
+      $nav[0].style.width=$nav[0].clientWidth+'px';
       $nav.addClass('fixed-open');
       $navIcon.addClass('icon-click').removeClass('icon-out');
     });
@@ -49,6 +50,10 @@
     slideout.on('beforeclose', function () {
       $nav.removeClass('fixed-open');
       $navIcon.addClass('icon-out').removeClass('icon-click');
+    });
+
+    slideout.on('close',function(){
+      $nav[0].style.width='';
     });
 
     $('#mobile-panel').on('touchend', function () {
@@ -214,7 +219,9 @@
     this.hasPjax = true;
 
     var that = this;
-    $(document).pjax('a', 'body', { fragment: 'body' });
+    $(document).pjax('a', 'body', {
+      fragment: 'body'
+    });
     $(document).on('pjax:send', function () {
       NProgress.start();
       $('body').addClass('hide-top');
@@ -238,7 +245,9 @@
     });
 
     $backToTop.click(function () {
-      $('body,html').animate({ scrollTop: 0 });
+      $('body,html').animate({
+        scrollTop: 0
+      });
     });
   };
 

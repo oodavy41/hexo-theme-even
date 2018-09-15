@@ -1,13 +1,13 @@
 menu:
-  home: 首页
-  archives: 归档
-  tags: 标签
-  categories: 分类
-  about: 关于
+  home: Home
+  archives: Archives
+  tags: Tags
+  categories: Categories
+  about: About
 
 footer:
-  powered: "由 %s 强力驱动"
-  theme: 主题
+  powered: "Powered by %s"
+  theme: Theme Modified from
 
 posts:
   prev: 上一页
@@ -19,9 +19,9 @@ posts:
   reward: '赞赏支持'
 
 copyright:
-  author: '原文作者'
-  link: '原文链接'
-  license: '许可协议'
+  author: 'Author'
+  link: 'Link'
+  license: 'License'
 
 counter:
   archives:

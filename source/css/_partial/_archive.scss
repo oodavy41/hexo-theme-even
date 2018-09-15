@@ -24,7 +24,7 @@
 
     .archive-post-counter {
       display: none;
-      color: $dark-gray;
+      color: $secColor;
     }
   }
 
@@ -45,7 +45,7 @@
 
     .archive-post-time {
       margin-right: 10px;
-      color: $dark-gray;
+      color: $secColor;
     }
 
     .archive-post-title {
@@ -64,7 +64,7 @@
       transform: $archive-post-hover-transform;
 
       .archive-post-time {
-        color: darken($dark-gray, 10%);
+        color: darken($secColor, 10%);
       }
 
       .archive-post-title .archive-post-link {
