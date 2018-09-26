@@ -20,7 +20,7 @@
     {{ current }}
 
     <span class="heart">
-      <i class="iconfont icon-heart"></i>
+      <i class="iconfont icon-star"></i>
     </span>
     <span class="author">{{ config.author }}</span>
   </span>

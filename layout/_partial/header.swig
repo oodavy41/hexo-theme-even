@@ -1,5 +1,6 @@
 <div class="logo-wrapper">
   <a href="{{ url_for('.') }}" class="logo">{{ config.title }}</a>
+  <canvas class="star"></canvas>
 </div>
 
 <nav class="site-navbar">

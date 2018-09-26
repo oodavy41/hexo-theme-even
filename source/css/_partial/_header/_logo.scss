@@ -9,6 +9,14 @@
     font-size: $logo-font-size;
     font-family: $logo-font-family;
   }
+
+  .star {
+    left: 22px;
+    top: 0px;
+    position: absolute;
+    mix-blend-mode: exclusion;
+    z-index: 99;
+  }
 }
 
 @include max-screen() {
