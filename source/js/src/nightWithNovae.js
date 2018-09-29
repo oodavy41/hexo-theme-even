@@ -101,7 +101,7 @@
             cc.restore();
         }
 
-        if (progress > 5) {
+        if (progress > -1) {
             if (Math.random() > 0.98) {
                 addStar(RAIN);
             }
