@@ -17,3 +17,23 @@
     }
   }
 }
+
+.avatar{
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+
+  :hover{
+    color: $theme-color;
+
+    img{
+      height: 35px;
+      border: 2px solid $theme-color;
+      border-radius: 15%;
+    }
+  }
+
+  img{
+    height: 39px;
+  }
+}

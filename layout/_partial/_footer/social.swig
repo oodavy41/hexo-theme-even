@@ -1,4 +1,10 @@
 {% if theme.social %}
+  <div class="avatar">
+    <a href="/about">
+      <img src="/imgs/avatar.png"/>
+      {{config.author}}
+    </a>
+  </div>
   <div class="social-links">
     {% for name, path in theme.social %}
       {% if path %}
