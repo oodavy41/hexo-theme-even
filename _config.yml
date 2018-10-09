@@ -52,21 +52,21 @@ reward:
 # Social links Settings
 # ===========================================
 social:
-  email: your@email.com
+  email: c@cocolate.cc
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: https://github.com/ahonn
-  weibo:
-  zhihu:
+  github: https://github.com/oodavy41
+  weibo: https://weibo.com/cocoalte
+  zhihu: 
   douban:
   pocket:
   tumblr:
   instagram:
-  bilibili: https://test.tv/
-  bangumi: https://test.tv/
+  bilibili: 
+  bangumi: https://bgm.tv/user/cocolate
 
 # ===========================================
 # Third Party Services Settings
@@ -74,8 +74,8 @@ social:
 
 # LeanCloud
 leancloud:
-  app_id:
-  app_key:
+  app_id: e93n5HhEEEjOQnErokxDjoQj-gzGzoHsz
+  app_key: 5aF6AzpVBq9bBVksDGgWJs1N
 
 # Baidu Analytics
 baidu_analytics:
@@ -83,7 +83,7 @@ baidu_analytics:
 baidu_verification:
 
 # Google Analytics
-google_analytics:
+google_analytics: UA-76847546-1
 # Google Verification
 google_verification:
 
@@ -102,8 +102,8 @@ livere_datauid:
 isso:
   address: pi.cocolate.cc:17850
 
-company: company
+company: 诹访大社
 # ===========================================
 # Version
 # ===========================================
-version: 2.10.1
+version: 0.1
