@@ -8,7 +8,7 @@
   <span class="division">|</span>
   <span class="theme-info">
     {{ __('footer.theme') }} - 
-    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+    <a class="theme-link" href="https://github.com/oodavy41/hexo-theme-sanae">Even</a>
   </span>
 
   <span class="copyright-year">
