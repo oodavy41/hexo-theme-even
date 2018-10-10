@@ -35,6 +35,8 @@ toc: true
 # jQuery fancybox
 fancybox: true
 
+katex: true
+
 pjax: true
 
 copyright:

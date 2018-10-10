@@ -40,6 +40,11 @@
 {# LeanCloud Counter #}
 {% include "../_script/counter.swig"%}
 
+{% if theme.katex %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+{% endif %}
+
 <script>
   window.config = {{ JSON.stringify(theme) }};
 </script>
