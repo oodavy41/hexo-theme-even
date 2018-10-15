@@ -3,7 +3,7 @@ A super simple theme for Hexo
 Modified from [even](https://github.com/ahonn/hexo-theme-even)
 
 ## Demo
-[在线预览 Demo](http://cocoalte.cc/)
+[在线预览 Demo](http://cocolate.cc/)
 个人使用，夹带了许多个性功能与私货，使用请谨慎
 
 ## Changes
