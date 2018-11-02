@@ -35,6 +35,8 @@ toc: true
 # jQuery fancybox
 fancybox: true
 
+katex: true
+
 pjax: true
 
 copyright:
@@ -59,7 +61,7 @@ social:
   linkedin:
   google:
   github: https://github.com/oodavy41
-  weibo: https://weibo.com/cocolate
+  weibo: https://weibo.com/3043644997
   zhihu: 
   douban:
   pocket:
