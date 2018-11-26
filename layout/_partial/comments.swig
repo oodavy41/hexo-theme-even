@@ -41,6 +41,15 @@
         .v .vlist .vcard .vhead .vnick{
           color: #a6ed8e;
         }
+        .v .vlist .vcard .vhead .vsys{
+          background-color:rgba(0,0,0,0);
+        }
+        .v .vlist .vcard .vh{
+          border-bottom: 1px dashed #456173;
+        }
+        .v .vlist .vcard .vh .vmeta .vat{
+          color: #f3f3f1;
+        }
       </style>
       <div id="vcomments"></div>
       <script>
