@@ -11,6 +11,49 @@
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_datauid }}">
         <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
       </div>  
+    {% elif theme.valine %}
+      <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+      <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+      <style type="text/css">
+        .v *{
+          color: #a6ed8e;
+        }
+        .v .vwrap {
+          border: 0px;
+        }
+        .v .vwrap .vheader .vinput {
+          border-bottom: 1px dashed #a6ed8e;
+        }
+        .v .vwrap .vheader .vinput:focus{
+          border-bottom: 1px dashed #1b3c59;
+        }
+        .v .veditor {
+          min-height: 3.5rem;
+        }
+        .v .vbtn:active, .v .vbtn:hover {
+          color: #a6ed8e;
+          border-color: #a6ed8e;
+          background-color: #1b3c59;
+        }
+        .v .vlist .vcard .vimg{
+          border: 1px dashed #a6ed8e;
+        }
+        .v .vlist .vcard .vhead .vnick{
+          color: #a6ed8e;
+        }
+      </style>
+      <div id="vcomments"></div>
+      <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '{{theme.valine.app_id}}',
+            appKey: '{{theme.valine.app_key}}',
+            notify:true, 
+            verify:false, 
+            avatar:'retro', 
+            placeholder: ' (*・ω・)⊃━  怪雨奇迹、☆'
+        })
+      </script>
     {% elif theme.isso %}
       <script data-isso="//{{theme.isso.address}}/"
         data-isso-css="true"

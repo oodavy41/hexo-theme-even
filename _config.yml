@@ -17,11 +17,11 @@ rss: default
 # Menu Settings
 # ===========================================
 menu:
-  Home: /
-  Archives: /archives/
-  Tags: /tags
-  # Categories: /categories
-  About: /about
+    Home: /
+    Archives: /archives/
+    Tags: /tags
+    # Categories: /categories
+    About: /about
 
 # ===========================================
 # Theme Settings
@@ -40,35 +40,35 @@ katex: true
 pjax: true
 
 copyright:
-  enable: true
-  # https://creativecommons.org/
-  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    enable: true
+    # https://creativecommons.org/
+    license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
 reward:
-  enable: false
-  qrCode:
-    wechat:
-    alipay:
+    enable: false
+    qrCode:
+        wechat:
+        alipay:
 
 # ===========================================
 # Social links Settings
 # ===========================================
 social:
-  email: c@cocolate.cc
-  stack-overflow:
-  twitter:
-  facebook:
-  linkedin:
-  google:
-  github: https://github.com/oodavy41
-  weibo: https://weibo.com/3043644997
-  zhihu: 
-  douban:
-  pocket:
-  tumblr:
-  instagram:
-  bilibili: 
-  bangumi: https://bgm.tv/user/cocolate
+    email: c@cocolate.cc
+    stack-overflow:
+    twitter:
+    facebook:
+    linkedin:
+    google:
+    github: https://github.com/oodavy41
+    weibo: https://weibo.com/3043644997
+    zhihu:
+    douban:
+    pocket:
+    tumblr:
+    instagram:
+    bilibili:
+    bangumi: https://bgm.tv/user/cocolate
 
 # ===========================================
 # Third Party Services Settings
@@ -76,8 +76,8 @@ social:
 
 # LeanCloud
 leancloud:
-  app_id: e93n5HhEEEjOQnErokxDjoQj-gzGzoHsz
-  app_key: 5aF6AzpVBq9bBVksDGgWJs1N
+    app_id: 9IyBy335tHIBss3MlzNH1wVF-gzGzoHsz
+    app_key: 6F595pNhGislnH1GuerDE9hj
 
 # Baidu Analytics
 baidu_analytics:
@@ -94,15 +94,20 @@ disqus_shortname:
 
 #Changyan
 changyan:
-  appid:
-  appkey:
+    appid:
+    appkey:
 
 #LiveRe
 livere_datauid:
 
 #isso
 isso:
-  address: pi.cocolate.cc:17850
+    address: # pi.cocolate.cc:17850
+
+#valine
+valine:
+    app_id: e93n5HhEEEjOQnErokxDjoQj-gzGzoHsz
+    app_key: 5aF6AzpVBq9bBVksDGgWJs1N
 
 company: 诹访大社
 # ===========================================
